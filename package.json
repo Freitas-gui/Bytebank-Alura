@@ -1,0 +1,21 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "A current account and customer registration system for the contracting Bytebank, so that it is possible to manipulate the users balance and carry out banking transactions. Work developed as a result of studies at Alura in the JavaScript course object-oriented programming.",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Freitas-gui/Bytebank-Alura.git"
+  },
+  "author": "Guilherme Freitas da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Freitas-gui/Bytebank-Alura/issues"
+  },
+  "homepage": "https://github.com/Freitas-gui/Bytebank-Alura#readme"
+}
