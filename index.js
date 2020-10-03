@@ -1,3 +1,4 @@
+import { Account } from "./Account.js"
 import {Client} from "./Client.js"
 import {CurrentAccount} from "./CurrentAccount.js"
 import {Savings} from "./Savings.js"
@@ -7,6 +8,9 @@ const client2 = new Client("Alice",283473487,738)
 
 const currentAccount1 = new CurrentAccount(321, client1)
 const currentAccount2 = new CurrentAccount(571, client2)
+
+//const conta = new Account(0, 571, client2)
+
 
 const saving1 = new Savings(currentAccount1.agency, client1)
 

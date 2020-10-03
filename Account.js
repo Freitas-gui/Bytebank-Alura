@@ -1,8 +1,12 @@
+// Abstract class
+
 import { Client } from "./Client.js"
 
 export class Account{
 
     constructor(balance, agency, client){
+        if(this.constructor == Account)
+            throw new Error ("You shouldn't instance an object of kind account directly.")
         this._balance = balance
         this._agency = agency
         this._client = client
@@ -26,8 +30,14 @@ export class Account{
     }
     
     withdraw(value){
-        if(this._balance >= value && value > 0)
-            this._balance -= value
+        throw new Error("This method is abstract.")
+    }
+
+    _withdraw(value, rate){
+        let value_with_rate = value * rate
+        if(this._balance >= value_with_rate && value > 0)
+            return this._balance -= value_with_rate
+        return 0
     }
 
     deposit(value){

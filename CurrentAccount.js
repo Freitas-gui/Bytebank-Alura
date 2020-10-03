@@ -10,9 +10,7 @@ export class CurrentAccount extends Account{
 
     withdraw(value){
         let rate = 1.1
-        let value_with_rate = value * rate
-        if(this._balance >= value_with_rate && value > 0)
-            this._balance -= value_with_rate
+        this._withdraw(value,rate)
     }
     
 

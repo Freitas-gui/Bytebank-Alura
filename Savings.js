@@ -5,5 +5,8 @@ export class Savings extends Account{
         super(0, agency, client)
     }
 
-    
+    withdraw(value){
+        let rate = 1
+        this._withdraw(value,rate)
+    }
 }
