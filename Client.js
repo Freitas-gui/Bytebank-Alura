@@ -4,6 +4,8 @@ export class Client{
         this.name=name
         this._cpf=cpf
         this._rg=rg
+
+        this._password
     }
 
     get cpf(){
@@ -15,6 +17,15 @@ export class Client{
         return this._rg
     }
 
+    sigin(password){
+        this._password = password
+    }
+
+    authenticate(password){
+        if(password == this._password)
+            return true
+        return false
+    }
     
 
 }

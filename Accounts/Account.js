@@ -1,6 +1,6 @@
 // Abstract class
 
-import { Client } from "./Client.js"
+import { Client } from "../Client.js"
 
 export class Account{
 
