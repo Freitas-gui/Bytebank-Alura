@@ -11,22 +11,7 @@ client1.sigin(12345)
 
 console.log(AuthenticationSystem.verifyPassword(12345, client1))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Testes Accounts
+//Testes Accounts
 
 /*import {Client} from "./Client.js"
 import {CurrentAccount} from "./Accounts/CurrentAccount.js"
